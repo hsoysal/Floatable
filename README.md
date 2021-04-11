@@ -29,43 +29,43 @@ It is for some UI elements like TextField, Label, Button. The text of the elemen
 
 
 ```swift
-var inset
+var inset: CGFloat { get set }
 ```
 It is the left and right padding. The floating label starts at the point that is away from the value of inset. 
 
 
 ```swift
-var floating
+var floating: Bool { get set }
 ```
 It is for whether the floating feature is turned on/off.
 
 
 ```swift
-var floatingColor
+var floatingColor: UIColor? { get set }
 ```
 It is the color of floating label. 
 
 
 ```swift
-var placeholder
+var placeholder: String? { get }
 ```
 It is the text of floating label. 
 
 
 ```swift
-var text
+var text: String? { get }
 ```
 It is the text of UI elements like TextField, Button, Label, UIView. If it is empty, there will be no floating label.
 
 
 ```swift
-var view
+var view: UIView { get }
 ```
 It is the UI element that the floating label will be added its subview. 
 
 
 ```swift
-var floatingFont
+var floatingFont: UIFont? { get }
 ```
 It is the font of the floating label. The custom font can be assignable to it. And also the font pointsize can be set.
 
